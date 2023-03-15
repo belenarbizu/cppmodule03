@@ -12,12 +12,13 @@ private:
 public:
     ScavTrap(std::string name);
     ~ScavTrap();
-    ScavTrap(const ScavTrap& cp);
-    ScavTrap& operator= (const ScavTrap& cp);
+    ScavTrap(const ScavTrap& st);
+    ScavTrap& operator= (const ScavTrap& st);
 
     void attack(const std::string& target);
     void takeDamage(unsigned int amount);
     void beRepaired(unsigned int amount);
+    void guardGate(void);
 };
 
 #endif
