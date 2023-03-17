@@ -1,8 +1,8 @@
-SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp
+SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 
 OBJS = ${SRCS:.cpp=.o}
 
-NAME = scavtrap
+NAME = fragtrap
 
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
