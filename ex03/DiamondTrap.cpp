@@ -1,6 +1,8 @@
 #include "DiamondTrap.hpp"
 
-DiamondTrap::DiamondTrap(std::string name) : FragTrap(name), ScavTrap(name)
+//http://jbgarcia.webs.uvigo.es/asignaturas/TO/cursilloCpp/17_herencia_multiple.html
+
+DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name), FragTrap(name), ScavTrap(name)
 {
     this->_name = name;
     this->ClapTrap::_name = name + "_clap_name";
@@ -15,7 +17,7 @@ DiamondTrap::~DiamondTrap()
     std::cout << this->_name << " monster destroyed" << std::endl;
 }
 
-DiamondTrap::DiamondTrap(const DiamondTrap& dt) : ScavTrap(dt), FragTrap(dt)
+DiamondTrap::DiamondTrap(const DiamondTrap& dt) : ClapTrap(dt), FragTrap(dt), ScavTrap(dt)
 {
     *this = dt;
     std::cout << this->_name << " has been copied" << std::endl;
