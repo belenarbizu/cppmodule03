@@ -1,6 +1,7 @@
 #include "DiamondTrap.hpp"
 
 //http://jbgarcia.webs.uvigo.es/asignaturas/TO/cursilloCpp/17_herencia_multiple.html
+//https://www.zator.com/Cpp/E4_11_2c.htm
 
 DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name), FragTrap(name), ScavTrap(name)
 {

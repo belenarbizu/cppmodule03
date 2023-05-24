@@ -17,7 +17,7 @@ ScavTrap::~ScavTrap()
 ScavTrap::ScavTrap(const ScavTrap& st) : ClapTrap(st)
 {
     *this = st;
-    std::cout << this->_name << " has been copied" << std::endl;
+    std::cout << this->_name << " robot has been copied" << std::endl;
 }
 
 ScavTrap& ScavTrap::operator= (const ScavTrap& st)
